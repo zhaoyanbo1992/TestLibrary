@@ -44,6 +44,7 @@ def user_login(request):
     return render(request, 'library/login.html', context)
 
 
+
 def user_register(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('/')
